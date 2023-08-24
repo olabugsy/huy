@@ -1,0 +1,133 @@
+/******nav bar******/
+
+.navbar{
+    font-size: 20px;
+    border-bottom: 1px solid #64583C;
+    
+}
+
+#brandname{
+    color: rgb(178, 171, 171);
+    font-weight: smaller;
+    font-style: italic;
+}
+
+
+#brandname:hover, #brandname.nav-link.active{
+    color:#fff
+
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: black;
+    transition: 0.3s ease;
+}
+
+.navbar-light .navbar-collapse .navbar-nav .nav-link:hover,
+.navbar-light .navbar-collapse .navbar-nav .nav-link.active{
+    color: aquamarine;
+}
+
+
+.navbar-brand
+{
+    position: relative;
+    background: url(/images/logo.png);
+    width: 50px;
+    left: 8px;
+}
+
+.container-fluid{
+    background-color:#0dccf0;
+    padding: 4px 0;
+}
+/*****About****/
+
+#about-heading{
+    color: rgb(61, 3, 3);
+    font-weight: 800;
+    text-align: center;
+    font-size: xx-large;
+  }
+
+  
+  
+  .aboutus {
+    color: rgb(24, 24, 23);
+  }
+
+
+  /* Service Page */
+.card-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+  }
+  .row {
+    justify-content: center;
+    gap: 64px
+  }
+  .card {
+    min-width: 288px !important;
+    max-width: 288px !important;
+  }
+  .card-header {
+    text-align: center;
+    background-color: #b5ebf5;
+  }
+  .custom-card {
+    position: relative;
+  }
+  .card-glow {
+    width: 100%;
+    height: 100%;
+  }
+
+  .card-body{
+    background-color: #7dc4d2;
+  }
+
+.custom-card {
+  box-shadow: -0.3rem -0.3rem rgb(244, 246, 250);
+}
+
+.card-text{
+    font-size: small;
+    font-weight: bolder;
+}
+
+/* Contact Page */
+.contact-block {
+    color: #1f2020;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 32px 0;
+    text-align: center;
+  }
+  .custom-card {
+    box-shadow: #f4f5f6;
+  }
+
+  #contactinformation{
+    margin-left: 10px;
+    font-weight: 200;
+    line-height: 24px;
+  }
+
+  @media (max-width: 1320px) {
+    .row {
+      gap: 32px;
+    }
+  }
+  @media (max-width: 860px) {
+    .row {
+      gap: 24px;
+    }
+  }
+  @media (max-width: 770px) {
+    .row {
+      gap: 16px;
+    }
+  }
