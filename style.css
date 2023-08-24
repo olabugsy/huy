@@ -3,7 +3,6 @@
 .navbar{
     font-size: 20px;
     border-bottom: 1px solid #64583C;
-    
 }
 
 #brandname{
@@ -41,6 +40,7 @@
     background-color:#0dccf0;
     padding: 4px 0;
 }
+
 /*****About****/
 
 #about-heading{
@@ -56,8 +56,35 @@
     color: rgb(24, 24, 23);
   }
 
+/* Home Page */
+.mainbody {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  padding: 32px;
+}
+img.car {
+  width: 40%;
+  border: 2px solid white;
+  object-fit: contain;
+}
+img.responsive-car {
+  width: 100%;
+  display: none;
+  border: 2px solid white;
+  object-fit: contain;
+  align-self: center;
+}
 
-  /* Service Page */
+@media (max-width: 1024px) {
+  img.responsive-car {
+    display: block;
+  }
+  img.car {
+    display: none;
+  }
+}
+/* Service Page */
 .card-group {
     display: flex;
     flex-wrap: wrap;
@@ -99,35 +126,61 @@
 
 /* Contact Page */
 .contact-block {
-    color: #1f2020;
-    display: flex;
-    flex-direction: column;
+  color: #1f2020;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding: 32px 0;
+  text-align: start;
+}
+.custom-card {
+  box-shadow: #f4f5f6;
+}
+#contactinformation{
+  margin-left: 10px;
+  font-weight: 200;
+  line-height: 24px;
+}
+.contact-content {
+  display: flex;
+  gap: 48px;
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 16px;
+}
+.contact-topic {
+  text-align: center;
+}
+img.security {
+  border: 2px solid white;
+  width: 40%;
+  max-width: 400px;
+  object-fit: contain;
+}
+
+@media (max-width: 1320px) {
+  .row {
+    gap: 32px;
+  }
+}
+@media (max-width: 860px) {
+  .row {
     gap: 24px;
-    padding: 32px 0;
-    text-align: center;
   }
-  .custom-card {
-    box-shadow: #f4f5f6;
+}
+@media (max-width: 768px) {
+  .row {
+    gap: 16px;
   }
-
-  #contactinformation{
-    margin-left: 10px;
-    font-weight: 200;
-    line-height: 24px;
+  img.security {
+    display: none;
   }
-
-  @media (max-width: 1320px) {
-    .row {
-      gap: 32px;
-    }
+  .contact-info{
+    align-items: center;
   }
-  @media (max-width: 860px) {
-    .row {
-      gap: 24px;
-    }
-  }
-  @media (max-width: 770px) {
-    .row {
-      gap: 16px;
-    }
-  }
+}
