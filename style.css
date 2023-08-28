@@ -37,7 +37,7 @@
 }
 
 .container-fluid{
-    background-color:#0dccf0;
+    background-color:#aee0ea;
     padding: 4px 0;
 }
 
@@ -45,7 +45,7 @@
 
 #about-heading{
     color: rgb(61, 3, 3);
-    font-weight: 800;
+    font-weight: bolder;
     text-align: center;
     font-size: xx-large;
   }
@@ -101,7 +101,7 @@ img.responsive-car {
   }
   .card-header {
     text-align: center;
-    background-color: #b5ebf5;
+    background-color: #171a1a;
   }
   .custom-card {
     position: relative;
@@ -112,11 +112,11 @@ img.responsive-car {
   }
 
   .card-body{
-    background-color: #7dc4d2;
+    background-color: #cceff6;
   }
 
 .custom-card {
-  box-shadow: -0.3rem -0.3rem rgb(244, 246, 250);
+  box-shadow: -0.3rem -0.3rem rgb(244, 249, 250);
 }
 
 .card-text{
